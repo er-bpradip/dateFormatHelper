@@ -14,7 +14,7 @@ if ( ! function_exists('iso_date_format')){
 }
 
 
-//Converts date to "03/25/2015" format 
+//Converts date to "03/25/2015" format
 if ( ! function_exists('short_date_format')){
     function short_date_format($datetime  = NULL){
 	return date_format(date_create($datetime), 'Y/m/d');
@@ -22,7 +22,7 @@ if ( ! function_exists('short_date_format')){
 }
 
 
-//Converts date to "Mar 25 2015" format 
+//Converts date to "Mar 25 2015" format
 if ( ! function_exists('long_date_format')){
     function long_date_format($datetime = NULL){
 	return date_format(date_create($datetime), 'F j, Y');
@@ -38,14 +38,14 @@ if ( ! function_exists('full_date_format')){
 }
 
 
-//Converts date time to "2015/03/25  11:49 PM" format 
+//Converts date time to "2015/03/25  11:49 PM" format
 if ( ! function_exists('short_date_time_format')){
     function short_date_time_format($datetime  = NULL){
 	return date_format(date_create($datetime), 'Y/m/d H:i a');
 	}
 }
 
-//Converts date time to "August 2, 2016 9:44 am" format 
+//Converts date time to "August 2, 2016 9:44 am" format
 if ( ! function_exists('long_date_time_format')){
     function long_date_time_format($datetime = NULL){
 		return date_format(date_create($datetime), 'F j, Y g:i a');
@@ -60,14 +60,14 @@ if ( ! function_exists('short_time_format')){
 	}
 }
 
-//Converts time to "22:49:12 PM" format 
+//Converts time to "22:49:12" format
 if ( ! function_exists('long_time_format')){
     function long_time_format($datetime = NULL){
 		return date_format(date_create($datetime), 'H:i:s');
 	}
 }
 
-//Converts time to "Wednesday March 25, 11:49:12 PM" format 
+//Converts time to "Wednesday March 25, 2014 11:49:12 PM" format
 if ( ! function_exists('full_date_time_format')){
     function full_date_time_format($datetime = NULL){
 	return date_format(date_create($datetime), 'D M j, Y H:i:s a');
@@ -75,7 +75,7 @@ if ( ! function_exists('full_date_time_format')){
 }
 
 
-//Converts time to "10:15AM 02 FEB 2014" format 
+//Converts time to "10:15 AM February 02 2014" format
 if ( ! function_exists('long_time_date_format')){
     function long_time_date_format($datetime = NULL){
 	return date_format(date_create($datetime), 'g:i A F j Y ');
