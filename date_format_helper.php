@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
-	Codeigniter date format helper collected by pradip bhattarai
-	this takes the input in any date time format and converts to our required format
+	Codeigniter date format helper collected by pradip bhattarai.
+	This takes the input in standard date time format (YY-mm-dd H:i:s) and converts to our required format
 */
 
 //DATE FORMATS
