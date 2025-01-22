@@ -47,7 +47,7 @@ if ( ! function_exists('short_date_time_format')){
 
 //Converts date time to "August 2, 2016 9:44 am" format
 if ( ! function_exists('long_date_time_format')){
-    function long_date_time_format($datetime = NULL){
+	function long_date_time_format($datetime = NULL){
 		return date_format(date_create($datetime), 'F j, Y g:i a');
 	}
 }
@@ -55,8 +55,8 @@ if ( ! function_exists('long_date_time_format')){
 
 //Converts time to "10:44 am" format
 if ( ! function_exists('short_time_format')){
-    function short_time_format($datetime = NULL){
-	return date_format(date_create($datetime), 'g:i a');
+    	function short_time_format($datetime = NULL){
+		return date_format(date_create($datetime), 'g:i a');
 	}
 }
 
